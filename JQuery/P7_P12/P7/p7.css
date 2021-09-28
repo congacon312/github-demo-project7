@@ -14,13 +14,13 @@
 }
 
 .noidung.NDhienra{
-  transform: scale(100%);
+  transform: scale(100%) rotate(0deg);
   visibility: visible;
   opacity: 1;
 }
 
 .noidung {
-  transform: scale(50%);
+  transform: scale(50%) rotate(45deg);
   position: fixed;
   width: 50%;
   height: 300px;
@@ -32,6 +32,8 @@
   visibility: hidden;
   opacity: 0;
   transition: 0.4s;
+
+  transform-origin: 0% 100%;
 }
 
 .home:hover .hinhtren {
