@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>EVENT ONMOUSE AND ANIMATION</title>
+</header>
+
+<body>
+
+<h1 style="font: x-large; color: coral; text-align: center;">ANIMATION ONMOUSE</h1>
+<script type="text/javascript">
+    if (document.images) {
+        var image1 = new Image();
+        image1.src = 'temp.jpg';
+        var image2 = new Image();
+        image2.src = 'temp1.jpg';
+    }
+</script>
+
+<a href="#" onMouseOut="document.myImage.src = image1.src;" onMouseOver="document.myImage.src = image2.src;">
+    <img src="temp.jpg" alt="Animation Onmoue" name = "myImage" style="width: 5cm; height: 5cm;">
+</a>
+</body>
+
+</html>

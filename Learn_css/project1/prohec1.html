@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>Start Learn CSS</title>
+    <link type="text/CSS" rel="stylesheet" href="project1.css"> <!--nhúng css vào html-->
+</header>
+
+<body">
+    <h1 style="text-align: center; font-size: xx-large;color: brown;">Hoc CSS</h1>
+    <p class="display-1 text-success">Hello Css</p>
+
+    <button style="background: cadetblue; color: aquamarine;" onclick="Click()">click</button> <!--nhúng css vào html-->
+    <div id="print"></div>
+
+    <div id="s1">
+        <p>Phan tu dau tien</p>
+        <div id="s2">
+            <p>Phan tu thu 2</p>
+        </div>
+    </div>
+
+    <table border="1" cellpadding="2" cellspacing="0" style="height: 150px;"  >
+        <tr>
+            <td style="vertical-align: top;">top</td>
+            <td style="vertical-align: middle;">mid</td>
+            <td style="vertical-align: bottom;">bot</td>
+        </tr>
+    </table>
+
+    <p class="small">Small font</p>
+    <p class="large">Large font</p>
+    <p class="XLarge">X-large font</p>
+
+    <form method="POST" action="t.cgi" onsubmit="validate()">
+        <P>ONSUBMIT</P>
+        <input type="submit" value="submit">
+    </form>
+
+    <form>
+        <div onmouseover="over()" onmouseout="out()">On mouse here</div>
+    </form>
+
+    <button onclick="go()">Go to facebook</button>
+
+    <script src="p1.js"></script>
+
+    <script>
+        function Click() {
+            var a = document.getElementById('print');
+
+            a.innerHTML = '<p> Chan </p>';
+        }
+    </script>
+
+    <div id="mouse"></div>
+
+    <noscript>
+        sorry...javascript not here
+    </noscript>
+</body>
+
+</html>

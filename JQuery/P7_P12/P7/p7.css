@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.noidung p {
+  position: absolute;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  top: 20%;
+  left: 5%;
+  font-size: 200%;
+}
+
+.noidung.NDhienra{
+  transform: scale(100%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.noidung {
+  transform: scale(50%);
+  position: fixed;
+  width: 50%;
+  height: 300px;
+  left: 25%;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #808080;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.home:hover .hinhtren {
+  opacity: 1;
+  transition: 0.5s;
+  top: 2%;
+}
+
+.home:hover .hinhduoi {
+  opacity: 1;
+  transition: 0.5s;
+  top: 97%;
+}
+
+.home:hover .hinhtrai {
+  opacity: 1;
+  transition: 0.5s;
+  left: 1%;
+}
+
+.home:hover .hinhphai {
+  opacity: 1;
+  transition: 0.5s;
+  left: 98%;
+}
+
+.hinhduoi {
+  width: 94%;
+  height: 1%;
+  top: 88%;
+  left: 3%;
+}
+
+.hinhphai {
+  width: 1%;
+  height: 98%;
+  left: 88%;
+  top: 1%;
+}
+
+.hinhtrai {
+  width: 1%;
+  height: 98%;
+  top: 1%;
+  left: 10%;
+}
+
+.hinhtren {
+  width: 92%;
+  height: 1%;
+  top: 10%;
+  left: 3%;
+}
+
+.hinhtren,
+.hinhduoi,
+.hinhtrai,
+.hinhphai {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  opacity: 0%;
+}
+
+.gradient {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(black, transparent);
+  opacity: 0%;
+}
+
+.home:hover .gradient {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.home .momo.dira{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.home .momo{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 3, 3, 0.548);
+  z-index: 7;
+  visibility: hidden;
+  opacity: 0;
+}
+
+button {
+  width: 15%;
+  height: 5%;
+  background: #636262;
+  border: 2px solid gray;
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 18%;
+  z-index: 4;
+  border-radius: 20px;
+  cursor: pointer;
+
+  opacity: 0;
+  animation: button_len 1s forwards;
+  animation-delay: 4s;
+}
+
+button.Close {
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  margin-top: 10%;
+  margin-left: 16%;
+}
+
+@-webkit-keyframes button_len {
+  0% {
+    opacity: 0;
+    top: 80%;
+  }
+  100% {
+    opacity: 1;
+    top: 55%;
+  }
+}
+
+button:hover {
+  transform: scale(105%);
+  transition: 0.2s;
+}
+
+p {
+  position: absolute;
+  width: 40%;
+  height: 30%;
+  font-size: 120%;
+  font-family: monospace;
+  top: 35%;
+  left: 5%;
+  z-index: 4;
+  color: white;
+
+  opacity: 0;
+  animation: hienra 1s forwards;
+  animation-delay: 4s;
+}
+
+h2 {
+  position: absolute;
+  width: 50%;
+  height: 7%;
+  font-size: 250%;
+  color: white;
+  z-index: 4;
+  font-family: cursive;
+  left: 5%;
+  top: 25%;
+
+  opacity: 0;
+  animation: hienra 1.5s forwards;
+  animation-delay: 4.5s;
+}
+
+.noidung h2 {
+  position: absolute;
+  z-index: 11;
+  width: 98%;
+  height: 20%;
+  top: 2%;
+  left: 1%;
+  text-align: center;
+}
+
+img.may {
+  position: relative;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  opacity: 0;
+
+  animation: dilen 1s forwards;
+}
+
+@-webkit-keyframes dilen {
+  0% {
+    opacity: 0;
+    top: 70%;
+  }
+  100% {
+    opacity: 0.9;
+    top: 50%;
+  }
+}
+
+img.sao {
+  position: absolute;
+  width: 10%;
+  top: 20%;
+  left: 65%;
+  z-index: 3;
+
+  opacity: 0;
+
+  animation: hienra 1s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes hienra {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+img.unicorn {
+  position: absolute;
+  width: 40%;
+  top: 15%;
+  left: 45%;
+  z-index: 3;
+
+  opacity: 0;
+
+  animation: sangtrai 1s forwards;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes sangtrai {
+  0% {
+    opacity: 0;
+    left: 60%;
+  }
+  100% {
+    opacity: 1;
+    left: 45%;
+  }
+}
+
+.menu {
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  background: linear-gradient(10deg, white, transparent, aliceblue);
+  z-index: 2;
+  top: 5%;
+  left: 25%;
+  border: 2px solid black;
+}
+
+img.BG {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 70%;
+}
+
+.home {
+  width: 100%;
+  height: 842px;
+  position: relative;
+  overflow: hidden;
+}

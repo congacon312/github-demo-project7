@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>On tap</title>
+
+    <style>
+        p {
+            color: rgb(54, 6, 58);
+            font-size: large;
+        }
+    </style>
+</header>
+<body>
+
+    <h1 style="color: brown; text-align: center;">Toi yeu em</h1>
+    <form class="getData">
+        <p>Name:</p>
+        <input type="text" id="name" name="name">
+        <p>Age:</p>
+        <input type="number" id="age" name="age">
+        <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <button style="background-color: darkseagreen;" onclick="event.preventDefault(); get_data();">commit</button>
+    </form>
+
+    <button onmouseout="out()" onmouseover="over()">Event Mouse</button>
+    <div id="eventMouse"></div> 
+    <button style="color: dodgerblue; background-color: gold;" onclick="goTo_GG()">GOTO GOOGLE</button>
+
+    <div id="print"></div>
+
+    <script>
+        function get_data() {
+            var name = document.getElementById('name').value;
+            var number = document.getElementById('age').value;
+            var gender = document.getElementById('gender').value;
+
+            var print = document.getElementById('print');
+            print.innerHTML = 
+                '<p> Name: ' + name + '.</p>' +
+                '<p> Age: ' + number + '.</p>' +
+                '<p> Gender: ' + gender + '.</p>'; 
+        }
+    </script>
+
+    <script>
+        function out() {
+            var a = document.getElementById('eventMouse');
+            a.innerHTML = '<p> Out Mouse </p>';
+        }
+
+        function over() {
+            var a = document.getElementById('eventMouse');
+            a.innerHTML = '<p> Over Mouse </p>';
+        }
+
+        function goTo_GG() {
+            window.location = 'https://www.youtube.com/';
+        }
+    </script>
+
+</body>
+
+</html>

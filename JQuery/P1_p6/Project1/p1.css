@@ -1,0 +1,43 @@
+div.dangki > h2, .dangnhap > h2 {
+    place-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.699);
+    border-radius: 20px;
+    background-color: rgb(52, 165, 194);
+    padding: 30px;
+    width: 300px;
+    height: 30px;
+    transform: translateX(3%);
+}
+
+.dangki, .dangnhap {
+    width: 10cm;
+    height: 10cm;
+    top: 10cm;
+    transform: translateX(110%);
+}
+
+.table {
+    color: black;
+    background-color: rgb(161, 184, 228);
+    
+}
+
+div.dangki > .Register, div.dangnhap > .Login {
+    width: 3cm;
+    height: 1cm;
+    background-color: rgb(150, 179, 231);
+    position: relative;
+    left: 7cm;
+}
+
+h1 {
+    background-color: darkgrey;
+    border-radius: 30px;
+    padding: 20px;
+    width: 700px;
+    position: relative;
+    left: 7cm;
+    text-align: center;
+    color: darkgreen;
+}

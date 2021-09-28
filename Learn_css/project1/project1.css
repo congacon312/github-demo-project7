@@ -1,0 +1,26 @@
+body{
+    background-origin: content-box;
+}
+#s1{
+    font-size: 20px;
+    color: blueviolet;
+}
+
+#s2 {
+    font-size: 0.5em;
+    
+}
+
+p.small {
+    font-size: small;
+}
+
+p.large {
+    font-weight: bolder;
+    font-size: large;
+}
+
+p.XLarge {
+    font-size: x-large;
+    font-style: normal;
+}

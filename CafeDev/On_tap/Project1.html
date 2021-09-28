@@ -1,0 +1,47 @@
+
+<html>
+
+<header>
+    <title>PROJECT1</title>
+</header>
+
+<body>
+    <h1>PROJECT1</h1>
+
+    <form action="Get data">
+        <input type="text" id = "name">
+        <input type="number" id="age">
+        <select name="Gender" id="Gender">
+            <option value="male">Male</option>
+            <option value="female">female</option>
+        </select>
+        <button onclick="event.preventDefault(); Click();">Submit </button>
+    </form>
+
+    <div id="result"></div>
+
+    <button onclick="ClickCount()">Click here to count</button>
+
+    <button onclick="RandomQuote();">Click here to random Quote</button>
+    <div id = "loiHay"></div>
+
+    <script src="code.js">
+    </script> 
+
+    <script>
+        var count = 0;
+
+        function ClickCount() {
+            count++;
+
+            var element = document.getElementById('count');
+            element.innerText = count;
+        }
+    </script>
+
+    <script src="loihay.js"></script>
+
+    <p> You have enter <span id="count"> 0 </span> times.</p>
+</body>
+
+</html>

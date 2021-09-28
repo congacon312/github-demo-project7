@@ -1,0 +1,39 @@
+h1 {
+    color: aliceblue;
+    background: black;
+}
+
+#name {
+    color: blue;
+}
+
+table {
+    empty-cells: inherit;
+    border-style: solid;
+}
+
+#link {
+    color: purple;
+
+    animation: linear;
+}
+
+#test1 {
+    color: springgreen;
+    text-align: center;
+    border-radius: 100px;
+    background: slategray;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+}
+
+#test2 {
+    color: springgreen;
+    text-align: center;
+    border-radius: 30px;
+    background: slategray;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+}

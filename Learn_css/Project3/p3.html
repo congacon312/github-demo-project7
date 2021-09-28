@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>CSS</title>
+    <link rel="stylesheet" href="p3.css" type="text/css">
+</header>
+
+<body>
+    <h1>PRO CSS</h1>
+    <p id="name">Look my eye</p>
+    <table cellpading = "1" cellspacing = "2" border="1">
+        <tr>
+            <th>name: </th>
+            <th>Hai</th>
+        </tr>
+
+        <tr>
+            <th>concac</th>
+        </tr>
+    </table>
+
+    <form action="list">
+        <ul>
+            <li>
+                Name
+            </li>
+
+            <li>
+                Age
+            </li>
+            <li>
+                Gender
+
+            </li>
+        </ul>
+    </form>
+
+    <p id="test1">That's what I like</p>
+    <button id="test2" onclick="event1()" onmouseover="over()" onmouseout="out()">That's what I like</button>
+    <p id="test3">That's what I like</p>
+
+    <script type="text/javascript">
+        function event1() {
+            window.location = '#' ;
+        }
+
+        function over() {
+            var temp = document.getElementById('test2');
+            temp.innerHTML = 'CC';
+        }
+
+        function out() {
+            var temp = document.getElementById('test2');
+            temp.innerHTML = 'That is what I like';
+        }
+    </script>
+
+
+
+    <a id="link" href="https://vietjack.com/css/pseudo_class_trong_css.jsp">https://vietjack.com/css/pseudo_class_trong_css.jsp</a>
+</body> 
+
+</html>

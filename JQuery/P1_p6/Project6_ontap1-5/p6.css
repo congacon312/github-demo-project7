@@ -1,0 +1,350 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.chapter1 .cosan{
+  width: 100%;
+  height: 35%;
+}
+
+.chapter1 .morong{
+  margin-top: 5%;
+  width: 100%;
+  height: 35%;
+}
+
+.motkhoi .thanhdoc1,
+.thanhdoc2 {
+  position: absolute;
+  width: 80%;
+  height: 1%;
+  background-color: rgba(255, 255, 255, 0.356);
+  z-index: 4;
+  top: 60%;
+  left: 10%;
+}
+
+.motkhoi:hover .thanhdoc1 {
+  transform: rotate(10deg) scale(90%);
+  transition: 0.5s;
+}
+.motkhoi:hover .thanhdoc2 {
+  transform: rotate(-10deg) scale(90%);
+  transition: 0.5s;
+}
+
+.chapter1 p {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  font-family: emoji;
+  position: absolute;
+  z-index: 6;
+  font-size: 120%;
+  color: white;
+  left: 10%;
+  top: 30%;
+}
+.chapter1 h3 {
+  width: 100%;
+  text-align: center;
+  height: 10%;
+  position: absolute;
+  top: 5%;
+  z-index: 5;
+  color: white;
+  font-family: -webkit-pictograph;
+  font-weight: bolder;
+}
+.chapter1 .hinhvuong {
+  width: 98%;
+  height: 20%;
+  border: 5px solid rgb(122, 120, 100);
+  position: absolute;
+  top: 69%;
+  z-index: 4;
+  background: linear-gradient(45deg, black, transparent);
+  opacity: 0;
+}
+
+.motkhoi:hover .hinhvuong {
+  opacity: 1;
+  transform: translateY(30%);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.motkhoi:hover .gradient {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.motkhoi:hover p {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.motkhoi:hover img {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.motkhoi:hover h3 {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.gradient {
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.41),
+    rgba(173, 216, 230, 0.58),
+    transparent,
+    rgba(218, 239, 156, 0.63)
+  );
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+}
+.mauxam {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background: rgba(128, 128, 128, 0.43);
+}
+.home img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.chapter1 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transform: scale(2);
+}
+.chapter1 .motkhoi {
+  width: 40%;
+  height: 100%;
+  margin-left: 6.5%;
+  margin-top: 2%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.chapter1 h2 {
+  text-align: center;
+  font-family: cursive;
+  height: 8%;
+  font-size: 200%;
+  font-weight: bolder;
+}
+.chapter1 {
+  width: 100%;
+  height: 800px;
+  background-color: #f5f5dc9c;
+}
+
+.home:hover .hinhvuong {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+.home:hover .logoHome {
+  transform: scale(1.1) translateY(10%);
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+.home p {
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  z-index: 6;
+  top: 45%;
+  left: 10%;
+  font-size: 150%;
+  font-family: cursive;
+  text-align: center;
+  color: white;
+
+  animation: daira 3s forwards;
+  animation-delay: 0.5s;
+}
+.home h2 {
+  width: 60%;
+  height: 10%;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  z-index: 6;
+  color: rgb(255, 134, 0);
+  font-family: cursive;
+  text-align: center;
+  font-size: 200%;
+  font-weight: bolder;
+
+  animation: daira 2s forwards;
+}
+
+@-webkit-keyframes daira {
+  0%{opacity: 0%; transform: scale(0);}
+  100%{ opacity: 100%; transform: scale(1);}
+}
+
+.home .hinhvuong {
+  width: 84%;
+  height: 69%;
+  position: absolute;
+  border: 10px solid rgb(192, 188, 188);
+  z-index: 4;
+  top: 20%;
+  left: 7%;
+  opacity: 0;
+}
+img.logoHome {
+  width: 40%;
+  height: 35%;
+  position: absolute;
+  transform: translateX(0%);
+  top: 15%;
+  left: 28%;
+  z-index: 3;
+  opacity: 0;
+}
+.home .mauxam {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(81, 91, 59, 0.52),
+    rgb(202, 230, 255),
+    transparent
+  );
+  position: absolute;
+  opacity: 0.3;
+  top: 0cm;
+  left: 0cm;
+  z-index: 2;
+}
+img.BG {
+  width: 100%;
+  position: absolute;
+  left: 0cm;
+  top: 0cm;
+  transform: translateX(0%);
+  z-index: 1;
+}
+.home {
+  width: 100%;
+  height: 841px;
+  position: relative;
+}
+input#input {
+  height: 100%;
+  border: 2px solid gray;
+}
+.socialNetwork li {
+  float: none;
+  padding: 10%;
+  cursor: context-menu;
+  background-color: rgba(245, 191, 117, 0.85);
+  margin-top: 2%;
+  z-index: 9;
+}
+.page li {
+  float: none;
+  padding: 10%;
+  cursor: context-menu;
+  background-color: rgba(245, 191, 117, 0.85);
+  margin-top: 2%;
+  z-index: 1;
+}
+.AppOfGoogle li {
+  float: none;
+  padding: 10%;
+  cursor: context-menu;
+  background-color: rgba(245, 191, 117, 0.85);
+  margin-top: 2%;
+  z-index: 9;
+}
+header {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  background-color: rgba(245, 191, 117, 0.85);
+  z-index: 10;
+}
+li {
+  float: left;
+  list-style: none;
+  padding: 0.5%;
+  cursor: default;
+  font-style: oblique;
+  font-weight: 800;
+  margin-left: 2%;
+  text-align: center;
+  margin-top: 0.5%;
+}
+li:hover {
+  transform: scale(1.2);
+}
+header img {
+  width: 5%;
+  transform: translateY(-20%) translateX(300%);
+}
+.Search img {
+  width: 5%;
+  transform: translateY(35%) translateX(30%);
+}
+.Search {
+  width: 50%;
+  height: 70%;
+  transform: translateY(-330%) translateX(167%);
+}
+.cantrai {
+  width: 20%;
+  height: auto;
+  position: fixed;
+  top: 15%;
+  padding: 0.5%;
+  border: 1px solid gray;
+  background-color: rgba(245, 191, 117, 0.85);
+  font-weight: bolder;
+  z-index: 8;
+}
+.cantrai .logo {
+  background: url("Image/Down.png") 96% center / 3% no-repeat;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9;
+}
+.cantrai .logo:hover {
+  transform: scale(1.1);
+}
+.cantrai ul li {
+  float: none;
+}
+button {
+  position: fixed;
+  z-index: 10;
+  border: 1px solid gray;
+  background: url("Image/Up.png") 90% center / 10% no-repeat
+    rgba(245, 192, 117, 0.643);
+  width: 9%;
+  height: 7%;
+  top: 92%;
+  left: 90.5%;
+  font-size: 60%;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}

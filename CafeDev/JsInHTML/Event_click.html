@@ -1,0 +1,41 @@
+<html>
+
+<header>
+
+    <title>Event click</title>
+
+</header>
+
+<body>
+
+    <h1>Event click</h1>
+
+    <button onclick="onClickMe()"> Click Here to go </button>
+
+    <button onclick="countClick()"> click Here to count </button>
+
+    <script>
+        //xuất hiện trong console
+        console.log('toi la Hai');
+
+        function onClickMe() {
+            document.write('Successfully!\n');
+        }
+
+        count = 0;
+
+        function countClick() {
+            count++;
+
+            // câu lệnh truyền giá trị count đến id trong hộp span
+            // document.querySelector('#count').innerText = count;
+            document.getElementById('count').innerText = count;
+        }
+    </script>
+
+    <!-- span làm thay đổi giá trị trong nó, với biến id truyền vào -->
+    <p> You have clicked <span id='count'> 0 </span> time </p>
+
+</body>
+
+</html>

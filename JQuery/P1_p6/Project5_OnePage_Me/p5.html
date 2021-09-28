@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One page by Me</title>
+    <!-- cài đặt thư viện jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+        integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <!-- include file JavaScript -->
+    <script src="p5.js"></script>
+    <!-- include file css -->
+    <link rel="stylesheet" href="p5.css">
+
+    <!--include fancy Box-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js">
+
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li>
+                    <p class="c1">Chapter 1</p>
+                </li>
+                <li>
+                    <p class="c2">Chapter 2</p>
+                </li>
+                <li>
+                    <p class="c3">Chapter 3</p>
+                </li>
+                <li>
+                    <p class="c4">Chapter 4</p>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <p>MY WEB ONE PAGE</p>
+        </div>
+        <button class="onTop">Tap to Top</button>
+    </header>
+
+    <div class="home">
+        <img src="Image/logo_home.png" alt="">
+        <h2>Onepage là một trang web duy nhất giới thiệu về một dịch vụ hoặc một sản phẩm trên internet. One page được
+            tích hợp đầy đủ công cụ marketing nhằm tăng tỉ lệ kinh doanh online nhanh và hiệu quả cao, giúp bạn quảng bá
+            được thương hiệu trực tuyến.</h2>
+        <a href="https://www.facebook.com/">Facebook</a>
+    </div>
+
+    <div class="chapter1">
+        <p>FOOD</p>
+        <button>
+            <img src="Image/logo1.png" alt="">
+            <h2 class="content">Chiffon: bánh dùng cả lòng trắng và lòng đỏ của trứng gà, được tách và đánh riêng trong
+                quá trình
+                làm
+                bánh và dùng dầu ăn làm thành phần chất béo chính trong bánh.</h2>
+
+        </button>
+        <button>
+            <img src="Image/logo2.png" alt="">
+
+            <h2 class="content"> Angel food: bánh không sử dụng chất béo, chỉ lấy lòng trắng đánh bông nên bánh nhẹ, độ
+                xốp đặc hơn
+                chiffon, cắt lát bên trong trắng như bông của lòng trắng trứng.</h2>
+
+        </button>
+        <button>
+            <img src="Image/logo3.png" alt="">
+
+            <h2 class="content">Pound cake: Dòng bánh Pound thường có kết cấu dặc và nặng hơn dạng bánh bông xốp, bánh
+                thường làm
+                trong
+                khuôn Bundt hoặc khuôn Loaf – dạng khuôn hình hoa với nhiều cánh.</h2>
+
+        </button>
+        <button>
+            <img src="Image/logo4.png" alt="">
+
+            <h2 class="content">Cheesecake: Dòng bánh Cheesecake có thành phần cream Cheese là chủ yếu, sử dụng rất ít
+                hoặc hoàn
+                toàn
+                không dùng bột. Thành phần chủ yếu của bánh là cream cheese. Bột được sử dụng rất ít hoặc không sử
+                dụng.
+            </h2>
+    </div>
+    </button>
+    </div>
+    <div class="chapter2">
+        <h2>REGISTER</h2>
+        <table border="2" cellspacing="2" cellpadding="2">
+            <tr>
+                <th>Name:</th>
+                <th><input id="name" style="width: 98%;height: 85%; " type="text"></th>
+            </tr>
+
+            <tr>
+                <th>Age:</th>
+                <th><input id="age" style="width: 98%;height: 85%; " type="number"></th>
+            </tr>
+
+            <tr>
+                <th>Gender:</th>
+                <th><select style="width: 98%;height: 85%; " name="gender" id="gender">
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                    </select></th>
+            </tr>
+            <button onclick="Submit()"
+                style="width: 10%;height: 4%; transform: translateX(410%) translateY(630%); background-color: antiquewhite;">Register</button>
+        </table>
+
+        <div id="output"></div>
+
+        <img src="Image/icon_chapter2.png" alt="">
+    </div>
+    <div class="chapter3">
+        <p>ACCORDION ANIMATE</p>
+        <div>
+            <button>
+                FOOD
+            </button>
+            <div class="content">
+                Thực phẩm (chữ Hán: 食品; thực nghĩa là "ăn"; phẩm trong "vật phẩm"), cũng gọi là thức ăn là bất kỳ vật
+                phẩm nào, bao gồm chủ yếu các chất: chất bột (cacbohydrat), chất béo (lipid), chất đạm (protein), khoáng
+                chất, hoặc nước, mà con người hay động vật có thể ăn hay uống được, với mục đích cơ bản là thu nạp các
+                chất dinh dưỡng nhằm nuôi dưỡng cơ thể hay vì sở thích.
+            </div>
+
+        </div>
+        <div>
+            <button>
+                DRINK
+            </button>
+            <div class="content">
+                Vitamin House luôn tìm kiếm, đào sâu trong chuyên môn với mong muốn mang đến những thông tin thực sự hữu
+                ích và có giá trị để cảm ơn quý khách hàng dành chút thời gian ghé qua website của chúng tôi.
+                <div class="photo">
+                    <a href="Image/logo1.png" rel="group"><img src="Image/logo1.png" class="miniPhoto" alt=""></a>
+                    <a href="Image/logo2.png" rel="group"><img src="Image/logo2.png" class="miniPhoto" alt=""></a>
+                    <a href="Image/logo3.png" rel="group"><img src="Image/logo3.png" class="miniPhoto" alt=""></a>
+                    <a href="Image/logo4.png" rel="group"><img src="Image/logo4.png" class="miniPhoto" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button>
+                CHEASE
+            </button>
+            <div class="content">
+                Hiện nay, trên thị trường, Cheese không chỉ có một mà có đến hàng trăm loại. Có thể kể tên một số loại
+                phổ biến như là: Cheddar Cheese, Parmesan Cheese, Mozzarella Cheese, Emmental Cheese, Blue Cheese, Brie
+                Cheese, Edam Cheese, Ricotta Cheese… Mỗi loại sẽ có nguồn gốc, thành phần, màu sắc và hương vị khác
+                nhau.
+            </div>
+        </div>
+        <div>
+            <button>
+                WATER
+            </button>
+            <div class="content">
+                Nước là một chất hóa học vô cơ, trong suốt, không vị, không mùi và gần như không màu, là thành phần
+                chính của thủy quyển Trái đất và chất lỏng trong tất cả các sinh vật sống đã biết. Nước rất quan trọng
+                đối với tất cả các dạng sống đã biết, mặc dù nó không cung cấp calo hoặc chất dinh dưỡng hữu cơ.
+            </div>
+        </div>
+    </div>
+    <div class="chapter4">
+        <p>CHAPTER 4</p>
+        <div class="content">
+            <img src="Image/photo_1.jpg" alt="" class="layer1">
+            <div class="xam"></div>
+            <div class="gradient"></div>
+            <div class="hinhvuong"></div>
+            <div class="chuto">PUDDING</div>
+            <div class="chunho">Pudding là một loại thức ăn có thể là món tráng miệng hoặc món mặn là một phần của bữa
+                ăn chính.</div>
+            <div class="hinhvuon"></div>
+        </div>
+        <div class="content">
+            <img src="Image/2.jpg" alt="" class="layer1">
+            <div class="xam"></div>
+            <div class="gradient"></div>
+            <div class="hinhvuong"></div>
+            <div class="chuto">YASUO</div>
+            <div class="chunho">Yasuo Kẻ Bất Dung Thứ, hay The Unforgiven là một nhân vật con người hư cấu, giả tưởng,
+                kiếm khách Ronin tự do, không phe phái trong Vũ trụ Liên Minh Huyền Thoại.</div>
+            <div class="hinhvuon"></div>
+        </div>
+        <div class="content">
+            <img src="Image/3.jpg" alt="" class="layer1">
+            <div class="xam"></div>
+            <div class="gradient"></div>
+            <div class="hinhvuong"></div>
+            <div class="chuto">What If...?</div>
+            <div class="chunho">What If...? là sê-ri phim truyền hình Mỹ, phát sóng trên nền tảng xem phim trực tuyến
+                Disney+.</div>
+            <div class="hinhvuon"></div>
+        </div>
+        <div class="content">
+            <img src="Image/4.jpg" alt="" class="layer1">
+            <div class="xam"></div>
+            <div class="gradient"></div>
+            <div class="hinhvuong"></div>
+            <div class="chuto">Avenger</div>
+            <div class="chunho">Biệt đội siêu anh hùng là một phim của điện ảnh Hoa Kỳ được xây dựng dựa trên nguyên mẫu
+                các thành viên trong biệt đội siêu anh hùng Avengers.</div>
+            <div class="hinhvuon"></div>
+        </div>
+</body>
+
+</html>

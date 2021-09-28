@@ -1,0 +1,29 @@
+div.dangnhap, div.dangky {
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.dangky > img {
+    width: 450px;
+    height: 300px;
+}
+
+div.dangnhap > img {
+    width: 450px;
+    height: 240px;
+}
+
+div.dangnhap > .login, div.dangky > .register {
+    background-color: rgb(94, 223, 210);
+    width: 80px;
+    height: 30px;
+    position: relative;
+    float: right;
+}

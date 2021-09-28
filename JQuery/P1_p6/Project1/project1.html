@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PROJECT 1</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"
+		integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="p1.js"></script>
+	<link rel="stylesheet" href="p1.css">
+</head>
+
+<body>
+
+	<h1>ĐĂNG NHẬP HỆ THỐNG</h1>
+
+	<div class="dangnhap">
+		<h2>Login</h2>
+		<table border="5" cellpadding="1" cellspacing="1" style="width: 10cm; height: 3cm; place-self: center;"
+			class="table">
+			<tr style="width: 2cm;">
+				<th>
+					<p>Name: </p>
+				</th>
+				<th><input style="border: 0ch; width: 8cm; height: 1cm;" type="text" id="nameR"></th>
+			</tr style="width: 2cm;">
+			<tr>
+				<th>
+					<p>Age: </p>
+				</th>
+				<th><input style="border: 0ch; width: 8cm; height: 1cm;" id="ageR"></th>
+			</tr>
+		</table>
+		<br>
+		<button class="Login" onclick="Login()">Login</button>
+	</div>
+
+
+	<div class="dangki">
+		<h2>Register</h2>
+		<table border="5" cellpadding="1" cellspacing="1" style="width: 10cm; height: 3cm; place-self: center;"
+			class="table">
+			<tr style="width: 2cm;">
+				<th>
+					<p>Name: </p>
+				</th>
+				<th><input style="border: 0ch; width: 8cm; height: 1cm;" type="text" id="nameL"></th>
+			</tr style="width: 2cm;">
+			<tr>
+				<th>
+					<p>Age: </p>
+				</th>
+				<th><input style="border: 0ch; width: 8cm; height: 1cm;" id="ageL"></th>
+			</tr>
+			<tr style="width: 2cm;">
+				<th>
+					<p>Gender: </p>
+				</th>
+				<th><select style="height: 1cm; width: 8cm;" name="gender" id="gender">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select></th>
+			</tr>
+		</table>
+		<br>
+		<button class="Register" onclick="Register()">Register</button>
+	</div>
+
+</body>
+
+</html>

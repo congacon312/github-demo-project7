@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+
+    <title>ANIMATION</title>
+
+</header>
+
+<body>
+
+    <h1 style="color: cadetblue; text-align: center;">ANIMATION</h1>
+
+    <form>
+        <img src="temp.jpg" id="image" alt="Animation for javascript" style="width: 5cm; height: 5cm;" > <!-- alt dùng để hiện ra thông tin khi không hiển thị được hình ảnh -->
+        <p style="font: x-large;">-- Click --</p>
+        <button onclick="moveRight()">Click here for move Right</button>
+        <button onclick="moveRightAuto()">Click here for auto move Right</button>
+        <button onclick="stop()">Stop</button>
+    </form>
+
+    <script>
+        var imgObj = null;
+        var animate;
+
+        function init() {
+            imgObj = document.getElementById('image');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px'; //dịch sang bên phải 10px
+        }
+
+        function moveRightAuto() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            animate = setTimeout(moveRightAuto,30); //call moveRightAuto after 30msec
+        }
+
+        function stop() {
+            clearTimeout(animate);
+        }
+
+        window.onload = init;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+    <title>FORM VALIDICATION</title>
+    <style>
+        h1 {
+            color: cornflowerblue;
+            font-size: xx-large;
+        }
+    </style>
+
+<body>
+
+<h1>FORM VALIDICATION</h1>
+<form>
+    <table cellpadding = "2" cellspacing = "2" border="5">
+        <tr>
+            <td align="right">Name:</td>
+            <td><input id="name" type = "text"></td>
+        </tr>
+
+        <tr>
+            <td align="right">Age:</td>
+            <td><input type="number" id="age"></td>
+        </tr>
+
+        <tr>
+            <td align="right">Gender:</td>
+            <td>
+                <select id="gender" name="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><button onclick="event.preventDefault(); submit();">Submit</button></td>
+        </tr>
+    </table>
+</form>
+
+<script src="p3.js"></script>
+
+
+<div id="print"></div>
+
+</body>
+
+</html>

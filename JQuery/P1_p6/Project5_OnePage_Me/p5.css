@@ -1,0 +1,309 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* css header */
+
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  left: auto;
+  background-color: antiquewhite;
+  z-index: 10;
+}
+button.onTop {
+  padding: 10px;
+  font-family: cursive;
+  font-weight: 700;
+  opacity: 0.6;
+  background-color: antiquewhite;
+  border-style: outset;
+  cursor: pointer;
+  border-radius: 2px;
+  position: fixed;
+  top: 3px;
+  left: 92%;
+}
+.logo {
+  color: darkslateblue;
+  font-family: cursive;
+  padding: 5px;
+  position: relative;
+  border: aqua;
+  left: 8%;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 0px;
+  height: 50px;
+  width: 300px;
+  margin-left: 38%;
+  cursor: pointer;
+}
+li {
+  float: left;
+  list-style: none;
+  font-size: larger;
+  font-family: cursive;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+ul {
+  float: left;
+}
+
+/* chapter4 */
+
+.chapter4 .chunho {
+  text-align: center;
+  z-index: 5;
+  color: white;
+  width: 70%;
+  top: 40%;
+  left: 14%;
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0%;
+}
+.chapter4 .content:hover .chunho{
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.chapter4 .chuto {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  height: 0%;
+  font-size: x-large;
+  font-family: cursive;
+  color: white;
+  z-index: 4;
+  text-align: center;
+  top: 20%;
+}
+
+.chapter4 .content:hover .chuto{
+  top: 15%;
+  transition: 0.4s;
+}
+
+.chapter4 .hinhvuong {
+  width: 80%;
+  height: 80%;
+  z-index: 3;
+  position: absolute;
+  top: 9%;
+  left: 9%;
+  border: 2px solid white;
+  opacity: 0%;
+}
+
+.chapter4 .content:hover .hinhvuong{
+  transform: scale(110%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.chapter4 .gradient {
+  top: 0%;
+  left: 0%;
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(45deg, #5997998f, transparent, #f5f1dce6);
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+}
+
+.chapter4 .content:hover .gradient{
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.xam {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.1%;
+  left: 0.1%;
+  background: #0000002e;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.chapter4 .content:hover .xam{
+  opacity: 0%;
+  transition: 0.4s;
+}
+
+img.layer1 {
+  margin: auto;
+  width: 100%;
+}
+
+.chapter4 .content {
+  width: 40%;
+  height: 35%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 7%;
+  margin-top: 6%;
+  float: left;
+}
+
+.chapter4 p{
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: bolder;
+  text-align: center;
+  transform: translateY(2%);
+}
+
+/* chapter 3,.. */
+
+.chapter3 button {
+  width: 50%;
+  font-size: x-large;
+  margin-left: 25%;
+  font-family: cursive;
+  background: url(Image/Down.png) no-repeat 98%;
+  background-size: 10px;
+  background-color: rgb(233, 181, 113);
+}
+
+.chapter3 .mauxanh {
+  background: url(Image/Up.png) no-repeat 98%;
+  background-size: 10px;
+  background-color: aquamarine;
+}
+
+.chapter3 button:hover {
+  background-color: aquamarine;
+}
+
+.chapter3 .content {
+  text-align: center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  width: 49%;
+  margin-left: 25%;
+  padding: 0.5%;
+}
+
+div#output {
+  border: 1px solid;
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+
+div#output h2 {
+  font-size: x-large;
+}
+
+table {
+  width: 50%;
+  height: 20%;
+  border-collapse: collapse;
+  margin-left: 1%;
+}
+.chapter1 img {
+  margin-left: 20px;
+}
+.chapter1 button {
+  width: 40%;
+  height: 300px;
+  margin-top: 5%;
+  margin-left: 7%;
+  background-color: beige;
+  border: 0.5px solid;
+  float: left;
+}
+h2 {
+  padding: 10%;
+  text-align: center;
+  width: 80%;
+  height: 40%;
+  margin-top: -10%;
+}
+
+.chapter2 h2 {
+  font-size: -webkit-xxx-large;
+  font-family: cursive;
+  width: 80%;
+  height: 0%;
+}
+img {
+  width: 20%;
+  margin-left: 40%;
+}
+
+.chapter2 img {
+  width: 48%;
+  margin-top: -65%;
+  margin-left: 50%;
+}
+.home {
+  width: 100%;
+  height: 800px;
+  background-color: beige;
+  background-image: url("Image/BG.png");
+  background-size: cover;
+  border: 1px solid gray;
+}
+.chapter2 {
+  background-color: beige;
+  width: 100%;
+  height: 800px;
+  border: 0.5px solid lightblue;
+}
+.chapter1 {
+  height: 800px;
+  background-color: beige;
+  width: 100%;
+  border: 0.5px solid lightblue;
+}
+
+.chapter3 {
+  background-color: beige;
+  width: 100%;
+  height: 800px;
+  border: 0.5px solid lightblue;
+}
+.chapter4 {
+  height: 800px;
+  background-color: beige;
+  width: 100%;
+  border: 0.5px solid lightblue;
+}
+.chapter1 button:hover {
+  background-color: aliceblue;
+}
+
+.chapter1 p {
+  text-align: center;
+  font-size: xxx-large;
+  font-family: cursive;
+  height: 20px;
+}
+
+.chapter3 p {
+  font-family: cursive;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5%;
+  font-weight: bolder;
+}
+
+.miniPhoto {
+  float: left;
+  height: 10%;
+  margin-left: 2px;
+}
